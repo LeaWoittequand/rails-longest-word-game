@@ -1,0 +1,13 @@
+<h1>******** Now your result ********</h1>
+<!-- <p>Find me in app/views/pages/score.html.erb</p> -->
+
+<%= @score %>
+<div class="result">
+<%= @result[:time] %><br>
+<%= @result[:score].round(2) %><br>
+<%= @result[:message] %>
+</div>
+
+<div class="link">
+<%= link_to "New Random Grid", game_path %>
+</div>
